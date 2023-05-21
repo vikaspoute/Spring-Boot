@@ -2,13 +2,10 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Spring Boot-DemoApplication<demo>",
+            "name": "BootApplication",
             "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "mainClass": "com.first.boot.demo.DemoApplication",
-            "projectName": "demo",
-            "args": "",
-            "envFile": "${workspaceFolder}/.env"
+            "mainClass": "com.first.spring.boot.BootApplication",
+            "projectName": "boot"
         }
     ]
 }
