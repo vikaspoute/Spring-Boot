@@ -6,6 +6,16 @@
             "request": "launch",
             "mainClass": "com.first.spring.boot.BootApplication",
             "projectName": "boot"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-JpaApplication<jpa>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.spring.boot.jpa.JpaApplication",
+            "projectName": "jpa",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
