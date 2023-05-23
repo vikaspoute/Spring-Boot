@@ -16,6 +16,16 @@
             "projectName": "jpa",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DevtoolApplication<devtool>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.springboot.devtool.DevtoolApplication",
+            "projectName": "devtool",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
