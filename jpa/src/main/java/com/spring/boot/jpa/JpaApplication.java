@@ -37,26 +37,42 @@ public class JpaApplication {
 		// });
 
 		// Get the user
-		Optional<User> optional = userRepository.findById(2);
-		User user = optional.get();
-		System.out.println(user);
+		// Optional<User> optional = userRepository.findById(2);
+		// User user = optional.get();
+		// System.out.println(user);
 
-		// Update user .............. In update i used old varialbe instead of new one
-		user.setUsername("Pondy");
-		user.setCity("Pune");
-		user.setStatus("Finding fronted job");
+		// // Update user .............. In update i used old varialbe instead of new
+		// one
+		// user.setUsername("Pondy");
+		// user.setCity("Pune");
+		// user.setStatus("Finding fronted job");
 
-		User upResult = userRepository.save(user);
-		System.out.println(upResult);
+		// User upResult = userRepository.save(user);
+		// System.out.println(upResult);
 
 		// Get all the users
-		Iterable<User> itr = userRepository.findAll();
-		itr.forEach(it -> System.out.println(it));
+		// Iterable<User> itr = userRepository.findAll();
+		// itr.forEach(it -> System.out.println(it));
 
 		// delete all the users
-		userRepository.deleteAll(itr);
-		System.out.println("All users deleted");
+		// userRepository.deleteAll(itr);
+		// System.out.println("All users deleted");
 
+		// List<User> users = userRepository.findByName("Vikas Poute");
+		// users.forEach(user -> {
+		// System.out.println(user);
+		// });
+
+		// List<User> users2 = userRepository.findByCity("Pune");
+		// users2.forEach(user -> System.out.println(user));
+
+		List<User> users3 = userRepository.getAllUsers();
+		users3.forEach(user -> System.out.println(user));
+		System.out.println("------------------------------------------------------");
+		List<User> userByName = userRepository.getUserByName("Vikas Poute");
+		userByName.forEach(user -> System.out.println(user));
+		System.out.println("------------------------------------------------------");
+		userRepository.getUserByNameAndCity("Vikas Poute", "Sangli").forEach(user -> System.out.println(user));
 	}
 
 }
