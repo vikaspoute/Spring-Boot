@@ -26,6 +26,16 @@
             "projectName": "devtool",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-RestapiApplication<restapi>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.springboot.restapi.RestapiApplication",
+            "projectName": "restapi",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
